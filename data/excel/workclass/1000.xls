@@ -1,0 +1,245 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 11">
+<link rel=File-List href="付款费用.files/filelist.xml">
+<link rel=Edit-Time-Data href="付款费用.files/editdata.mso">
+<link rel=OLE-Object-Data href="付款费用.files/oledata.mso">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Created>1996-12-17T01:32:42Z</o:Created>
+  <o:LastSaved>2013-04-04T12:30:26Z</o:LastSaved>
+  <o:Version>11.9999</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:RemovePersonalInformation/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:1.0in .75in 1.0in .75in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;}
+tr
+	{mso-height-source:auto;
+	mso-ruby-visibility:none;}
+col
+	{mso-width-source:auto;
+	mso-ruby-visibility:none;}
+br
+	{mso-data-placement:same-cell;}
+.style0
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:宋体;
+	mso-generic-font-family:auto;
+	mso-font-charset:134;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:常规;
+	mso-style-id:0;}
+td
+	{mso-style-parent:style0;
+	padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:宋体;
+	mso-generic-font-family:auto;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:locked visible;
+	white-space:nowrap;
+	mso-rotate:0;}
+.xl24
+	{mso-style-parent:style0;
+	text-align:left;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl25
+	{mso-style-parent:style0;
+	text-align:right;
+	vertical-align:middle;}
+.xl26
+	{mso-style-parent:style0;
+	font-size:24.0pt;
+	text-align:center;
+	vertical-align:middle;}
+.xl27
+	{mso-style-parent:style0;
+	text-align:center;
+	vertical-align:middle;}
+.xl28
+	{mso-style-parent:style0;
+	text-align:left;
+	vertical-align:top;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	white-space:normal;}
+.xl29
+	{mso-style-parent:style0;
+	text-align:left;
+	vertical-align:top;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+ruby
+	{ruby-align:left;}
+rt
+	{color:windowtext;
+	font-size:9.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:宋体;
+	mso-generic-font-family:auto;
+	mso-font-charset:134;
+	mso-char-type:none;
+	display:none;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <x:ExcelWorkbook>
+  <x:ExcelWorksheets>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet1</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>285</x:DefaultRowHeight>
+     <x:Print>
+      <x:ValidPrinterInfo/>
+      <x:PaperSizeIndex>9</x:PaperSizeIndex>
+      <x:HorizontalResolution>180</x:HorizontalResolution>
+      <x:VerticalResolution>180</x:VerticalResolution>
+     </x:Print>
+     <x:CodeName>Sheet1</x:CodeName>
+     <x:Selected/>
+     <x:Panes>
+      <x:Pane>
+       <x:Number>3</x:Number>
+       <x:ActiveRow>2</x:ActiveRow>
+       <x:ActiveCol>2</x:ActiveCol>
+      </x:Pane>
+     </x:Panes>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet2</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>285</x:DefaultRowHeight>
+     <x:CodeName>Sheet2</x:CodeName>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet3</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>285</x:DefaultRowHeight>
+     <x:CodeName>Sheet3</x:CodeName>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+  </x:ExcelWorksheets>
+  <x:WindowHeight>4530</x:WindowHeight>
+  <x:WindowWidth>8505</x:WindowWidth>
+  <x:WindowTopX>480</x:WindowTopX>
+  <x:WindowTopY>120</x:WindowTopY>
+  <x:AcceptLabelsInFormulas/>
+  <x:ProtectStructure>False</x:ProtectStructure>
+  <x:ProtectWindows>False</x:ProtectWindows>
+ </x:ExcelWorkbook>
+</xml><![endif]-->
+</head>
+
+<body link=blue vlink=purple><table x:str border=0 cellpadding=0 cellspacing=0 width=740 style='border-collapse:
+ collapse;table-layout:fixed;width:556pt'>
+ <col width=217 style='mso-width-source:userset;mso-width-alt:6944;width:163pt'>
+ <col width=234 style='mso-width-source:userset;mso-width-alt:7488;width:176pt'>
+ <col width=289 style='mso-width-source:userset;mso-width-alt:9248;width:217pt'>
+ <tr height=80 style='mso-height-source:userset;height:60.0pt'>
+  <td colspan=3 height=80 class=xl26 width=740 style='height:60.0pt;width:556pt'>付款申请单（费用）</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+ <td colspan=2 height=40 class=xl27 style='height:30.0pt'>2014年01月27日</td>
+  <td height=40 class=xl27 style='height:30.0pt;'>单号：FDSAFDS</td>
+  
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl24 style='height:30.0pt'>申请人：管理员</td>
+  <td class=xl24 style='border-left:none'>部门：</td>
+  <td class=xl24 style='border-left:none'>请款类别：报销</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl24 style='height:30.0pt;border-top:none'>项目：FDSA</td>
+  <td class=xl24 style='border-top:none;border-left:none'>合同编号：FDSAFSD</td>
+  <td class=xl24 style='border-top:none;border-left:none'>费用类别：管理</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td colspan=2 height=40 class=xl24 style='height:30.0pt'>付款金额：FDSAFD</td>
+  <td class=xl24 style='border-top:none;border-left:none'>大写：FDSAFS</td>
+ </tr>
+ <tr height=121 style='mso-height-source:userset;height:90.75pt'>
+  <td colspan=2 height=121 class=xl28 dir=LTR width=451 style='border-right:
+  .5pt solid black;height:90.75pt;width:339pt'>付款说明：FDSAFDS</td>
+  <td class=xl24 style='border-top:none;border-left:none'>部门负责人审批：</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td colspan=2 height=40 class=xl24 style='height:30.0pt'>付款单位：FDSAF</td>
+  <td class=xl24 style='border-top:none;border-left:none'>财务负责人审批：</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td colspan=2 height=40 class=xl24 style='height:30.0pt'>收款单位：FDSAFDSFDSA</td>
+  <td class=xl24 style='border-top:none;border-left:none'>总经理审批：</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td colspan=3 height=40 class=xl25 style='height:30.0pt'></td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=217 style='width:163pt'></td>
+  <td width=234 style='width:176pt'></td>
+  <td width=289 style='width:217pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>
