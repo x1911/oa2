@@ -12,15 +12,15 @@
 </script>
 </head>
 <body class="bodycolor">
-<!--
+
 <table width="90%" border="0" align="center" cellpadding="3" cellspacing="0" class="small" style='margin-top:30px;'>
   <tr>
     <td  align="right" class="Big">
-	<a href="admin.php?ac=<?php //echo $ac?>&fileurl=<?php //echo $fileurl?>" style="font-size:12px;">返回列表页</a><img src="template/default/content/images/f_ico.png" align="absmiddle">
+	<a href="admin.php?ac=<?php echo $ac?>&fileurl=<?php echo $fileurl?>" style="font-size:12px;">返回列表页</a><img src="template/default/content/images/f_ico.png" align="absmiddle">
     </td>
   </tr>
 </table>
--->
+
 
 <form name="save" method="post" action="?ac=<?php echo $ac?>&fileurl=<?php echo $fileurl?>&do=views">
 	<input type="hidden" name="view" value="edit" />
@@ -29,7 +29,7 @@
     
     <div class="text_body">
     <h1>
-     <?php echo $plan["title"]?>&nbsp;&nbsp;<?//php echo $_title['name']?>
+     <?php echo $plan["title"]?>&nbsp;&nbsp;<?php echo $_title['name']?>
     </h1>
     
     部门：&nbsp;&nbsp;<font color="21a5e6"><?php echo $plan['department']?></font> <br /><b>时间：&nbsp;&nbsp;<?php echo $plan['startdate']?>&nbsp;&nbsp;至&nbsp;&nbsp;<?php echo $plan['enddate']?>。</b>
@@ -74,80 +74,58 @@ $query = $db->query("SELECT * FROM ".DB_TABLEPRE."bbs_log where bbsid='".$plan["
 $n++;
 ?>
 	
-	<table width="90%" border="0" align="center" cellpadding="3" cellspacing="0" class="small" style='margin-top:10px;'>
-  <tr>
-    <td class="Big"><img src="template/default/content/images/notify_new.gif" align="absmiddle"><span class="big3"><?php echo $row['title']?></span>&nbsp;&nbsp;&nbsp;&nbsp;
-	<span style="font-size:12px;">&nbsp;<span style="font-size:34px; font-weight:bold; color:#FF0000;"><?php echo $n?></span>&nbsp;楼&nbsp;&nbsp;
-	<?php if($_USER->id==$row['uid']){?>
-	<!-- 删贴没做完
-    <a href="admin.php?ac=<?php echo $ac?>&fileurl=knowledge&do=views&view=del&id=<?php echo $row['id']?>&bbsid=<?php echo $plan['id']?>" style="font-size:12px;">删除</a> -->
+
+
+<div class="z_comment">	
+<p class="_left">
+    	  <?php 
+	  echo $row["author"];
+	  echo '<br>';
+	  get_realpic($row['uid']);
+	  ?>
+      <br />
+      <b class="time">发表于&nbsp; <?php echo $row['enddate']?> </b>
+      </p>
+      
+      
+      <div class="send"><s class="arrowborder"><s class="arrow"></s></s>
+      <img src="template/default/content/images/notify_new.gif" align="middle"><span class="big3"><?php echo $row['title']?></span>
+      	<span style="font-size:12px;float:right;">&nbsp;<span style="font-weight:bold; color:#ff9900;"><?php echo $n?></span>&nbsp;楼&nbsp;&nbsp;
+	<?php if($_USER->id==$row['uid']  || is_superadmin() ){?>
+
+	<a href="admin.php?ac=<?php echo $ac?>&fileurl=<?php echo $fileurl?>&do=views&view=del&id=<?php echo $row['id']?>&bbsid=<?php echo $plan['id']?>" style="font-size:12px;">删除</a> 
 	<? }?>
-	</span>
-    </td>
-  </tr>
-</table>
-	
-	<table class="TableBlock" border="0" width="90%" align="center" style="border-bottom:#4686c6 solid 0px;">
-		<tr>
-			<td nowrap class="TableContent" width="90">评论时间：</td>
-			  <td class="TableData"><?php echo $row['enddate']?></td>  	  	
-		</tr>
-		
-		<tr>
-      <td nowrap class="TableContent"> 发布人：</td>
-      <td class="TableData"><?php echo $row["author"]?></td>
-    </tr>
-	</table>	
-	<table  width="90%" style="border-left:#4686c6 solid 1px;border-right:#4686c6 solid 1px;border-bottom:#4686c6 solid 1px;" align="center">
-	<tr>
-      <td colspan="2" bgcolor="#FFFFFF" style="padding:20px 20px 20px 20px;"><?php echo $row['content']?></td>
-    </tr>
-	</table>	
-	
+    </span>
+      <br /><br />
+      
+      <?php echo $row['content']?>
+      </div>
+      
+    </div>	
 <?php
 	}
 ?>
 
+<div class="z_comment_writting">
+<h4>发布评论</h4>
+
+主题：<? get_helps()?> :&nbsp;&nbsp;<input type="text" name="title" class="BigInput" style="width:300px;color:#777;" size="20" value="回复:<?php echo $plan["title"]?>" /><br /><br />
 
 
-
-
-<!--
-
-<table class="TableBlock" border="0" width="90%" align="center" style="border-bottom:#4686c6 solid 0px;margin-top:30px;">
-		<tr>
-			<td nowrap class="TableContent" width="90">评论主题：<?// get_helps()?></td>
-			  <td class="TableData">
-					<input type="text" name="title" class="BigInput" style="width:368px;" size="20" value="回复:<?//php echo $plan["title"]?>" />
-				</td>  	  	
-		</tr>
-		
-	
-	</table>	
-	<table  width="90%" style="border-left:#4686c6 solid 1px;border-right:#4686c6 solid 1px;" align="center">	
-		<tr>
-			<td nowrap class="TableContent" width="94" style="border-right:#cccccc solid 1px;">评论内容：</td>
-			  <td class="TableData" style="padding-top:10px; padding-bottom:10px; padding-left:3px;">
 <script>
         KE.show({
                 id : 'content'
         });
 </script>
-		<textarea name="content" cols="70" rows="12" class="input" style="width:600px;height:200px;"></textarea>
-			</td>
-		</tr>
-		</table>
-  <table class="TableBlock" border="0" width="90%" align="center" style="border-top:#4686c6 solid 0px;">
-		
-		<tr align="center" class="TableControl">
-			<td colspan="2" nowrap>
-			<input type="Submit" value="发起评论" class="BigButtonBHover"></td>
-	  </tr>
-	 </table>
+		<textarea name="content" cols="70" rows="12" class="input" style="width:580px;height:200px;"></textarea>
+  <br /> 
+        <input type="Submit" value="发   表" class="BigButtonBHover _center">
+</div>
+
 
   
 </form>
 
- -->
+ 
 </body>
 </html>

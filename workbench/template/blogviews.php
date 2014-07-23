@@ -61,7 +61,7 @@ $n++;
       	<span style="font-size:12px;float:right;">&nbsp;<span style="font-weight:bold; color:#ff9900;"><?php echo $n?></span>&nbsp;楼&nbsp;&nbsp;
 	<?php if($_USER->id==$row['uid']  || is_superadmin() ){?>
 
-	<a href="admin.php?ac=<?php echo $ac?>&fileurl=knowledge&do=views&view=del&id=<?php echo $row['id']?>&bbsid=<?php echo $blog['id']?>" style="font-size:12px;">删除</a> 
+	<a href="admin.php?ac=<?php echo $ac?>&fileurl=<?php echo $fileurl?>&do=views&view=del&id=<?php echo $row['id']?>&bbsid=<?php echo $blog['id']?>" style="font-size:12px;">删除</a> 
 	<? }?>
     </span>
       <br /><br />

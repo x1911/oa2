@@ -248,7 +248,21 @@ if ($do == 'list') {
 			$title='回复信息';
 			get_logadd($id,$content,$title,12,$_USER->id);
 			show_msg('评论发布成功！', 'admin.php?ac='.$ac.'&fileurl='.$fileurl.'&do=views&id='.$bbsid);
-		}else{
+		}elseif ($_GET['view'] == 'del') {
+
+                    get_key("date_plan_delete");
+                    $id = getGP('id','G');
+                    $bbsid = getGP('bbsid','G');
+
+                            $db->query("DELETE FROM ".DB_TABLEPRE."bbs_log WHERE bbsid = '$bbsid' and type='10' and id = '$id' ");
+
+                    $content=serialize($bbsid);
+                    $title='删除计划评论';
+                    get_logadd($id,$content,$title,11,$_USER->id);
+                    show_msg('删除计划评论成功！', 'admin.php?ac='.$ac.'&fileurl='.$fileurl.'&do=views&id='.$bbsid);
+
+                 }
+                else{
 			if($id!=''){
 				$plan = $db->fetch_one_array("SELECT * FROM ".DB_TABLEPRE."plan  WHERE id = '$id' ");
 				$_title['name']='信息浏览';

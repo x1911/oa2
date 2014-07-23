@@ -1,4 +1,6 @@
 <?php
+
+//123
 define('IN_ADMIN',True);
 require_once('include/common.php');
 get_login($_USER->id);
