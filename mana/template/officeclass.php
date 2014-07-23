@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="template/default/content/css/style.css">
 <script language="javascript" type="text/javascript" src="DatePicker/WdatePicker.js"></script>
 <script src="template/default/tree/js/admincp.js?SES" type="text/javascript"></script>
-<script src="template/default/js/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script src="template/default/js/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript"> 
 
 </script>
