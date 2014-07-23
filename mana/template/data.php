@@ -5,7 +5,7 @@
 <title>信息操作页面</title>
 <link type="text/css" media="screen" charset="utf-8" rel="stylesheet" href="template/default/content/css/style.account-1.1.css" />
 <link charset="utf-8" rel="stylesheet" href="template/default/content/css/personal.record-1.0.css" media="all" />
-<script src="template/default/js/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script src="template/default/js/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript"> 
 
 </script>
