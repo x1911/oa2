@@ -70,12 +70,12 @@ if ($do == 'list') {
 }elseif ($do == 'update') {
 	
 	get_key("date_blog_delete");
-	//$idarr = getGP('id','P','array');
+	$idarr = getGP('id','P','array');
 	$id = getGP('id','G');
-	//foreach ($idarr as $id) {
+	foreach ($idarr as $id) {
 	$db->query("DELETE FROM ".DB_TABLEPRE."blog WHERE id = '$id' ");
 	$db->query("DELETE FROM ".DB_TABLEPRE."bbs_log WHERE bbsid = '$id' and type='9' ");
-	//}
+	}
 	$content=serialize($idarr);
 	$title='删除日志信息';
 	get_logadd($id,$content,$title,10,$_USER->id);
@@ -167,7 +167,20 @@ if ($do == 'list') {
 			$title='回复信息';
 			get_logadd($id,$content,$title,11,$_USER->id);
 			show_msg('评论发布成功！', 'admin.php?ac='.$ac.'&fileurl='.$fileurl.'&do=views&id='.$bbsid);
-		}else{
+		}elseif ($_GET['view'] == 'del') {
+
+                    get_key("date_blog_delete");
+                    $id = getGP('id','G');
+                    $bbsid = getGP('bbsid','G');
+
+                            $db->query("DELETE FROM ".DB_TABLEPRE."bbs_log WHERE bbsid = '$bbsid' and type='9' and id = '$id' ");
+
+                    $content=serialize($bbsid);
+                    $title='删除工作日志评论';
+                    get_logadd($id,$content,$title,9,$_USER->id);
+                    show_msg('删除工作日志评论成功！', 'admin.php?ac='.$ac.'&fileurl='.$fileurl.'&do=views&id='.$bbsid);
+
+                 }else{
 			if($id!=''){
 				$db->query("UPDATE ".DB_TABLEPRE."blog SET number = number + 1 WHERE id = '$id'");
 				$blog = $db->fetch_one_array("SELECT * FROM ".DB_TABLEPRE."blog  WHERE id = '$id'");

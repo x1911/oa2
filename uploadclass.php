@@ -1,4 +1,5 @@
 <?php
+
 !defined('IN_TOA') && exit('Access Denied!');
  class upload_file
  {
